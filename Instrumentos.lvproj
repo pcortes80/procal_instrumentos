@@ -11,18 +11,6 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="DS360" Type="Folder">
-			<Item Name="DS360.lvlib" Type="Library" URL="../DS360/DS360.lvlib"/>
-			<Item Name="DS360m.pdf" Type="Document" URL="../DS360/DS360m.pdf"/>
-		</Item>
-		<Item Name="CNT90" Type="Folder">
-			<Item Name="CNT90.lvlib" Type="Library" URL="../CNT90/CNT90.lvlib"/>
-			<Item Name="CNT-9X_manual.pdf" Type="Document" URL="../CNT90/CNT-9X_manual.pdf"/>
-		</Item>
-		<Item Name="K2002" Type="Folder">
-			<Item Name="K2002.lvlib" Type="Library" URL="../K2002/K2002.lvlib"/>
-			<Item Name="2002_900_01D.pdf" Type="Document" URL="../K2002/2002_900_01D.pdf"/>
-		</Item>
 		<Item Name="QMH_Suppot" Type="Folder">
 			<Item Name="Error Handler" Type="Folder">
 				<Item Name="Check Loop Error.vi" Type="VI" URL="../QMH_Support/Check Loop Error.vi"/>
@@ -34,8 +22,40 @@
 		</Item>
 		<Item Name="Controles" Type="Folder">
 			<Item Name="Slide.ctl" Type="VI" URL="../Controles/Slide.ctl"/>
+			<Item Name="Amp_Frec.ctl" Type="VI" URL="../Controles/Amp_Frec.ctl"/>
 		</Item>
-		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
+		<Item Name="Varios" Type="Folder">
+			<Item Name="Globales.vi" Type="VI" URL="../Varios/Globales.vi"/>
+			<Item Name="FGV_Timer.vi" Type="VI" URL="../Varios/FGV_Timer.vi"/>
+		</Item>
+		<Item Name="VISA" Type="Folder">
+			<Item Name="DS360" Type="Folder">
+				<Item Name="DS360.lvlib" Type="Library" URL="../DS360/DS360.lvlib"/>
+				<Item Name="DS360m.pdf" Type="Document" URL="../DS360/DS360m.pdf"/>
+			</Item>
+			<Item Name="CNT90" Type="Folder">
+				<Item Name="CNT-90ph.pdf" Type="Document" URL="../CNT90/CNT-90ph.pdf"/>
+				<Item Name="CNT90.lvlib" Type="Library" URL="../CNT90/CNT90.lvlib"/>
+			</Item>
+			<Item Name="K2002" Type="Folder">
+				<Item Name="K2002.lvlib" Type="Library" URL="../K2002/K2002.lvlib"/>
+				<Item Name="2002_900_01D.pdf" Type="Document" URL="../K2002/2002_900_01D.pdf"/>
+			</Item>
+		</Item>
+		<Item Name="GPIB" Type="Folder">
+			<Item Name="DS360" Type="Folder">
+				<Item Name="DS360_GPIB.lvlib" Type="Library" URL="../DS360_GPIB/DS360_GPIB.lvlib"/>
+			</Item>
+			<Item Name="K2002" Type="Folder">
+				<Item Name="K2002_GPIB.lvlib" Type="Library" URL="../K2202_GPIB/K2002_GPIB.lvlib"/>
+			</Item>
+			<Item Name="CNT90" Type="Folder">
+				<Item Name="CNT90_GPIB.lvlib" Type="Library" URL="../CNT90_GPIB/CNT90_GPIB.lvlib"/>
+			</Item>
+		</Item>
+		<Item Name="Pruebas con VISA.vi" Type="VI" URL="../Pruebas con VISA.vi"/>
+		<Item Name="Pruebas con Funciones GPIB.vi" Type="VI" URL="../Pruebas con Funciones GPIB.vi"/>
+		<Item Name="PruebaInicial.vi" Type="VI" URL="../PruebaInicial.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
@@ -70,6 +90,12 @@
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
+			</Item>
+			<Item Name="instr.lib" Type="Folder">
+				<Item Name="DS360 Send Message.vi" Type="VI" URL="/&lt;instrlib&gt;/srds360/ds360fg.llb/DS360 Send Message.vi"/>
+				<Item Name="GPIB Send Message.vi" Type="VI" URL="/&lt;instrlib&gt;/ke2002/KE2002.LLB/GPIB Send Message.vi"/>
+				<Item Name="GPIB Receive Message.vi" Type="VI" URL="/&lt;instrlib&gt;/ke2002/KE2002.LLB/GPIB Receive Message.vi"/>
+				<Item Name="Keithley 2002 Read Query.vi" Type="VI" URL="/&lt;instrlib&gt;/ke2002/KE2002.LLB/Keithley 2002 Read Query.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
