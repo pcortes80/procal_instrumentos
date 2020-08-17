@@ -53,9 +53,10 @@
 				<Item Name="CNT90_GPIB.lvlib" Type="Library" URL="../CNT90_GPIB/CNT90_GPIB.lvlib"/>
 			</Item>
 		</Item>
-		<Item Name="Pruebas con VISA.vi" Type="VI" URL="../Pruebas con VISA.vi"/>
-		<Item Name="Pruebas con Funciones GPIB.vi" Type="VI" URL="../Pruebas con Funciones GPIB.vi"/>
-		<Item Name="PruebaInicial.vi" Type="VI" URL="../PruebaInicial.vi"/>
+		<Item Name="1.- Pruebas con VISA.vi" Type="VI" URL="../1.- Pruebas con VISA.vi"/>
+		<Item Name="2.- Pruebas con Funciones GPIB.vi" Type="VI" URL="../2.- Pruebas con Funciones GPIB.vi"/>
+		<Item Name="3.- Prueba 2 con GPIB.vi" Type="VI" URL="../3.- Prueba 2 con GPIB.vi"/>
+		<Item Name="4.- Prueba 2 con VISA.vi" Type="VI" URL="../4.- Prueba 2 con VISA.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
