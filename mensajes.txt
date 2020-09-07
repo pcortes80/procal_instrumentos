@@ -1,0 +1,18 @@
+KEITHLEY INSTRUMENTS INC.,MODEL 2002,???????,A09  /A02  
+16
+
+PENDULUM, CNT-90, 949796, V1.15 09 Mar 2007
+10
+
+StanfordResearchSystems,DS360,61925,1.05
+8
+
+Se hicieron pruebas con 3 cables GPIB, uno en cada puerto USB, y los problemas siguen ocurriendo. Sospecho que los errores son por el bus serial.
+
+Hice pruebas con el CNT con un clable gpib y el DS360 con otro cable gpib, el cnt corriendo con el codigo de su driver, y el generador con el codigo hecho, y al tirar un comando al generador y al cnt al mismo tiempo, o en tiempos muy cercanos, sl cnt se demora en responder.
+
+Finalemente hice pruebas cin los comandos gpib cin el codigo 3.- y me dio buenos resultados. al parecer es problema de la arquietura de colas, por eso demora el llegar el comando.
+
+Haay que seguir haciendo pruebas.
+
+los comandos gpib estan bien, pero agregar los comandos RTS y CLS de VISa a los comandos GPIB, para poder tener un menjor control del bus.

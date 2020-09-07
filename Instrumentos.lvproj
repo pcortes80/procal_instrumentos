@@ -57,6 +57,7 @@
 		<Item Name="2.- Pruebas con Funciones GPIB.vi" Type="VI" URL="../2.- Pruebas con Funciones GPIB.vi"/>
 		<Item Name="3.- Prueba 2 con GPIB.vi" Type="VI" URL="../3.- Prueba 2 con GPIB.vi"/>
 		<Item Name="4.- Prueba 2 con VISA.vi" Type="VI" URL="../4.- Prueba 2 con VISA.vi"/>
+		<Item Name="5.- Prueba 5 con VISA.vi" Type="VI" URL="../5.- Prueba 5 con VISA.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
@@ -97,6 +98,7 @@
 				<Item Name="GPIB Send Message.vi" Type="VI" URL="/&lt;instrlib&gt;/ke2002/KE2002.LLB/GPIB Send Message.vi"/>
 				<Item Name="GPIB Receive Message.vi" Type="VI" URL="/&lt;instrlib&gt;/ke2002/KE2002.LLB/GPIB Receive Message.vi"/>
 				<Item Name="Keithley 2002 Read Query.vi" Type="VI" URL="/&lt;instrlib&gt;/ke2002/KE2002.LLB/Keithley 2002 Read Query.vi"/>
+				<Item Name="Pendulum CNT90.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Pendulum CNT90/Pendulum CNT90.lvlib"/>
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
